@@ -58,7 +58,6 @@ const UrlRedirectDashboard = () => {
 
   return (
     <>
-      <h2 className="text-lg font-bold mb-2">Umbraco Media Redirect</h2>
       {activeTabUrl && (
         <p className="mb-2 text-gray-700">
           Current Host: <span className="font-mono">{activeTabUrl.host}</span>
@@ -112,7 +111,7 @@ const UrlRedirectDashboard = () => {
       {pages.length > 0 && (
         <div className="mt-4">
           <h3 className="font-semibold mb-2">All Redirects</h3>
-          <ul className="list-disc pl-5">
+          <ul className="list-disc">
             {pages.map((page) => (
               <li key={page.url} className="mb-1 flex items-center justify-between">
                 <span className="font-mono text-sm">{page.title}</span>
