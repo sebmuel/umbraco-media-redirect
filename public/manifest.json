@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Umbraco Media Redirect",
+  "description": "A Chrome extension for Umbraco Media Redirect",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["storage", "tabs", "activeTab", "declarativeNetRequest", "declarativeNetRequestFeedback"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
